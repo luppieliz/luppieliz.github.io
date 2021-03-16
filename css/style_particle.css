@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;  
+}
+/*  
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: b;
+}
+*/
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 95%;
+  z-index: 950;
+}
+
+body {
+  background: hsl(0, 0%, 100%);
+  background-size: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 200, 232);
+  line-height: 1.0;
+  -webkit-font-smoothing: antialiased;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  shape-rendering: geometricPrecision;
+  overflow: hidden;
+}
+/* my name header */
+#intro {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  padding: 0 10px;
+  width: 100%;
+  text-align: center;
+}
+/*my name */
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 120;
+  color: #000000;
+  font-family: monospace;
+  letter-spacing: 0.10em;
+  text-align: center;
+}
+h1::after {
+  content: '';
+  width: 80px;
+  display: block;
+  background: #fff;
+  height: 10px;
+  margin: 30px auto;
+  line-height: 1.1;
+}
+p {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 100;
+  color: #000000;
+  font-family: monospace;
+  letter-spacing: 0.10em;
+  text-align: center;
+}
+/*@media for phone view*/
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+@media only screen and (max-width: 100px) {
+  #intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 20px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 4px;
+  }
+}
+/* nav bar */
+
+.topnav {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 10;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 10;
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 120px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgba(255, 174, 0, 0.726);
+  color: black;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
